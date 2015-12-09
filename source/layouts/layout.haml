@@ -1,0 +1,11 @@
+!!! 5
+%html.page-home{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+    %title 
+      = current_page.data.title || "The Middleman"
+    = stylesheet_link_tag "normalize", "all"
+    = stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    = javascript_include_tag  "all"
+  %body
+    = yield
