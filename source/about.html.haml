@@ -1,0 +1,15 @@
+---
+title: About Page
+---
+%div.welcome
+    %h1 Middleman is Watching
+    %p
+        =image_tag lorem.image('100x100', :background_color => '333', :color => 'fff')
+    %p
+        =lorem.sentences 5
+    %p
+        =lorem.first_name
+    %p
+        =truncate_words("Once upon a time in a world far far away", :length => 4)
+    %p.doc
+        =link_to "back", "/index.html"
